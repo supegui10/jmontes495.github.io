@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Hospital Santander</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+  <style>
+    table {
+      width: 100%;
+      height: 100%;
+      border: 1px rgb(0, 0, 153);
+    }
+  </style>
+</head>
+
+
+<body>
+
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="height:70px;padding:10px">
+            <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand page-scroll" href="#page-top" style="font-size:20pt">Zona Pacientes</a>
+            </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="salidaSegura.html">Salir</a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="inicio.html">Volver</a>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <!-- Page Heading/Breadcrumbs -->
+    <div class="row">
+      <div class="col-lg-12">
+        <h1>Agendar una cita</h1>
+      </div>
+    </div>
+
+
+    <br>
+
+    <hr style="border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0))">
+
+
+
+    <div class="row">
+      <div class="col-lg-12">
+        <h2>Lista Especialidades</h2>
+        <p>Eliga la especialidad de su cita médica. Si lo desea, puede elegir el especialista perteneciente a la especialidad.</p>
+      </div>
+    </div>
+    <!-- /.row -->
+
+
+    <div class="row">
+      <div class="form-group">
+        <div class="col-md-4">
+          <h3>Elegir Especialidad</h3>
+          <select class="form-control">
+            <option>Especialidades </option>
+            <option>Anestesiología, cuidado perioperatorio y medicina del dolor</option>
+            <option>Cardiología</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4">
+        <!-- Blog Search Well -->
+        <div class="form-group">
+          <h3>Elegir Especialista</h3>
+          <select multiple class="form-control">
+            <option selected>Ninguno (Se le asignará cualquiera disponible)</option>
+            <option>Gutierrez, Fransisco</option>
+            <option>Laurel, Steffano</option>
+            <option>etc</option>
+            <option>etc</option>
+            <option>etc</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <hr style="border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0))">
+
+    <div class="row">
+      <div class="col-lg-12">
+        <h2>Elegir el día y la hora</h2>
+        <p>Eliga el día y la hora que desea tener su cita dentro de las opciones habilitadas.</p>
+      </div>
+    </div>
+
+    <div class="row">
+
+      <div class="col-md-6">
+        <!--Fila del mes y el año-->
+
+        <div class="row">
+
+
+          <div class="col-md-3">
+            <div class="form-group">
+
+              <h3>Mes</h3>
+              <select class="form-control">
+                <option>Enero</option>
+                <option>Febrero</option>
+                <option>Marzo</option>
+                <option>Abril</option>
+                <option>Mayo</option>
+                <option>Junio</option>
+                <option>Julio</option>
+                <option>Agosto</option>
+                <option selected>Septiembre</option>
+                <option>Octubre</option>
+                <option>Noviembre</option>
+                <option>Diciembre</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="form-group">
+              <h3>Año</h3>
+              <select class="form-control">
+                <option>2015</option>
+                <option>2016</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <TABLE style="margin: 0 auto;">
+          <TBODY>
+            <div>
+              <TR>
+                <TD>
+                  <p>
+                    <h5>DOM</h5>
+                  </p>
+                </TD>
+                <TD>
+                  <p>
+                    <h5>LUN</h5>
+                  </p>
+                </TD>
+                <TD>
+                  <p>
+                    <h5>MAR</h5>
+                  </p>
+                </TD>
+                <TD>
+                  <p>
+                    <h5>MIE</h5>
+                  </p>
+                </TD>
+                <TD>
+                  <p>
+                    <h5>JUE</h5>
+                  </p>
+                </TD>
+                <TD>
+                  <p>
+                    <h5>VIE</h5>
+                  </p>
+                </TD>
+                <TD>
+                  <p>
+                    <h5>SAB</h5>
+                  </p>
+                </TD>
+              </TR>
+              <TR>
+                <TD>
+                  <p/>
+                </TD>
+                <TD>
+                  <p>
+                    <a class="btn btn-diasHabiles">1</a>
+                  </p>
+                </TD>
+                <TD>
+                  <p>
+                    <a class="btn btn-diasNoHabiles">2</a>
+                  </p>
+                </TD>
+                <TD>
+                  <p>
+                    <a class="btn btn-diasHabiles">3</a>
+                  </p>
+                </TD>
+                <TD>
+                  <p>
+                    <a class="btn btn-diasHabiles" >4</a>
+                  </p>
+                </TD>
+                <TD>
+                  <p>
+                    <a class="btn btn-diasNoHabiles">5</a>
+                  </p>
+                </TD>
+                <TD>
+                  <p>
+                    6
+                  </p>
+                </TD>
+              </TR>
+              <TR>
+                <TD>
+                  <p>7</p>
+                </TD>
+                <TD>
+                  <p>
+                    <a class="btn btn-diasHabiles"  >8</a>
+                  </p>
+                </TD>
+                <TD>
+                  <p>
+                    <a class="btn btn-diasNoHabiles"  >9</a>
+                  </p>
+                </TD>
+                <TD>
+                  <p>
+                    <a class="btn btn-diasNoHabiles"  >10</a>
+                  </p>
+                </TD>
+                <TD>
+                  <p>
+                    <a class="btn btn-diasNoHabiles"  >11</a>
+                  </p>
+                </TD>
+                <TD>
+                  <p>
+                    <a class="btn btn-diasHabiles"  >12</a>
+                  </p>
+                </TD>
+                <TD>
+                  <p>
+                    13
+                  </p>
+                </TD>
+              </TR>
+              <TR>
+                <TD>
+                  <p>14</p>
+                </TD>
+                <TD>
+                  <p>
+                    <a class="btn btn-diasNoHabiles"  >15</a>
+                  </p>
+                </TD>
+                <TD>
+                  <p>
+                    <a class="btn btn-diasHabiles"  >16</a>
+                  </p>
+                </TD>
+                <TD>
+                  <p>
+                    <a class="btn btn-diasNoHabiles"  >17</a>
+                  </p>
+                </TD>
+                <TD>
+                  <p>
+                    <a class="btn btn-diasHabiles"  >18</a>
+                  </p>
+                </TD>
+                <TD>
+                  <p>
+                    <a class="btn btn-diasHabiles"  >19</a>
+                  </p>
+                </TD>
+                <TD>
+                  <p>
+                    20
+                  </p>
+                </TD>
+              </TR>
+              <TR>
+                <TD>
+                  <p>21</p>
+                </TD>
+                <TD>
+                  <p>
+                    <a class="btn btn-diasNoHabiles"  >22</a>
+                  </p>
+                </TD>
+                <TD>
+                  <p>
+                    <a class="btn btn-diasHabiles"  >23</a>
+                  </p>
+                </TD>
+                <TD>
+                  <p>
+                    <a class="btn btn-diasNoHabiles"  >24</a>
+                  </p>
+                </TD>
+                <TD>
+                  <p>
+                    <a class="btn btn-diasHabiles"  >25</a>
+                  </p>
+                </TD>
+                <TD>
+                  <p>
+                    <a class="btn btn-diasHabiles"  >26</a>
+                  </p>
+                </TD>
+                <TD>
+                  <p>
+                    27
+                  </p>
+                </TD>
+              </TR>
+              <TR>
+                <TD>
+                  <p>28</p>
+                </TD>
+                <TD>
+                  <p>
+                    <a class="btn btn-diasHabiles"  >29</a>
+                  </p>
+                </TD>
+                <TD>
+                  <p>
+                    <a class="btn btn-diasNoHabiles"  >30</a>
+                  </p>
+                </TD>
+                <TD>
+                  <p/>
+                </TD>
+                <TD>
+                  <p/>
+                </TD>
+                <TD>
+                  <p/>
+                </TD>
+                <TD>
+                  <p/>
+                </TD>
+                <TD>
+                  <p/>
+                </TD>
+              </TR>
+          </TBODY>
+        </TABLE>
+
+        <!--Aquí termina la fila del mes y el año-->
+        </div>
+
+
+        
+        <div class="col-md-6" style="padding:10px;border:2px">
+          <div class="form-group">
+            <h3>Hora</h3>
+
+            <div class="col-md-4">
+              <div class="radio">
+                <label>
+                  <input type="radio" name="horas" checked>7:00 - 7:30
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="horas">8:00 - 8:30
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="horas">9:00 - 9:30
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="horas">10:00 - 10:30
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="horas">11:00 - 11:30
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="horas">12:00 - 12:30
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="horas">1:00 - 1:30
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="horas">2:00 - 2:30
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="horas">3:00 - 3:30
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="horas">4:00 - 4:30
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="radio">
+              <label>
+                <input type="radio" name="horas" checked>7:30 - 8:00
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="horas">8:30 - 9:00
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="horas">9:30 - 10:00
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="horas">10:30 - 11:00
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="horas">11:30 - 12:00
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="horas">12:30 - 1:00
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="horas">1:30 - 2:00
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="horas">2:30 - 3:00
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="horas">3:30 - 4:00
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="horas">4:30 - 5:00
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<br><br>
+
+    <div class="row">
+      <p align="center">
+      <a class="btn btn-primary" align="center" style="width:300px" href="confirmacion.html">Reservar cita</a>
+    </p>    
+    </div>
+
+
+    </div>
+
+    <!--Termina fila fecha y hora-->
+    
+
+
+
+    <!--Termina el container-->
+
+    <!-- /.row -->
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+      <div class="row">
+        <div class="col-lg-12">
+          <p align="center">Fundación Santa Fe de Bogotá Carrera 7 No. 117 – 15. Tel: (571) 6030303 / Fax (571) 6575714 / A.A. 220246 Bogotá D.C. Colombia Suramérica / Email: info@fsfb.org.co</p>
+        </div>
+      </div>
+    </footer>
+
+
+
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
